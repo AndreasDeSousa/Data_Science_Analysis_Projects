@@ -1332,26 +1332,304 @@
     <argument id="490" parent="169">
       <Position>1</Position>
     </argument>
-    <table id="491" parent="170" name="sqlite_master">
+    <table id="491" parent="170" name="CovidDeaths"/>
+    <table id="492" parent="170" name="CovidVaccinations"/>
+    <table id="493" parent="170" name="sqlite_master">
       <System>1</System>
     </table>
-    <column id="492" parent="491" name="type">
+    <column id="494" parent="491" name="iso_code">
+      <DataType>TEXT|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="495" parent="491" name="continent">
+      <DataType>TEXT|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="496" parent="491" name="location">
+      <DataType>TEXT|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="497" parent="491" name="date">
+      <DataType>TEXT|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="498" parent="491" name="population">
+      <DataType>REAL|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="499" parent="491" name="total_cases">
+      <DataType>REAL|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="500" parent="491" name="new_cases">
+      <DataType>REAL|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="501" parent="491" name="new_cases_smoothed">
+      <DataType>REAL|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="502" parent="491" name="total_deaths">
+      <DataType>REAL|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="503" parent="491" name="new_deaths">
+      <DataType>REAL|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="504" parent="491" name="new_deaths_smoothed">
+      <DataType>REAL|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="505" parent="491" name="total_cases_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="506" parent="491" name="new_cases_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="507" parent="491" name="new_cases_smoothed_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <column id="508" parent="491" name="total_deaths_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>15</Position>
+    </column>
+    <column id="509" parent="491" name="new_deaths_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>16</Position>
+    </column>
+    <column id="510" parent="491" name="new_deaths_smoothed_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>17</Position>
+    </column>
+    <column id="511" parent="491" name="reproduction_rate">
+      <DataType>REAL|0s</DataType>
+      <Position>18</Position>
+    </column>
+    <column id="512" parent="491" name="icu_patients">
+      <DataType>REAL|0s</DataType>
+      <Position>19</Position>
+    </column>
+    <column id="513" parent="491" name="icu_patients_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>20</Position>
+    </column>
+    <column id="514" parent="491" name="hosp_patients">
+      <DataType>REAL|0s</DataType>
+      <Position>21</Position>
+    </column>
+    <column id="515" parent="491" name="hosp_patients_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>22</Position>
+    </column>
+    <column id="516" parent="491" name="weekly_icu_admissions">
+      <DataType>REAL|0s</DataType>
+      <Position>23</Position>
+    </column>
+    <column id="517" parent="491" name="weekly_icu_admissions_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>24</Position>
+    </column>
+    <column id="518" parent="491" name="weekly_hosp_admissions">
+      <DataType>REAL|0s</DataType>
+      <Position>25</Position>
+    </column>
+    <column id="519" parent="491" name="weekly_hosp_admissions_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>26</Position>
+    </column>
+    <column id="520" parent="492" name="iso_code">
+      <DataType>TEXT|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="521" parent="492" name="continent">
+      <DataType>TEXT|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="522" parent="492" name="location">
+      <DataType>TEXT|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="523" parent="492" name="date">
+      <DataType>TEXT|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="524" parent="492" name="new_tests">
+      <DataType>REAL|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="525" parent="492" name="total_tests">
+      <DataType>REAL|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="526" parent="492" name="total_tests_per_thousand">
+      <DataType>REAL|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="527" parent="492" name="new_tests_per_thousand">
+      <DataType>REAL|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <column id="528" parent="492" name="new_tests_smoothed">
+      <DataType>REAL|0s</DataType>
+      <Position>9</Position>
+    </column>
+    <column id="529" parent="492" name="new_tests_smoothed_per_thousand">
+      <DataType>REAL|0s</DataType>
+      <Position>10</Position>
+    </column>
+    <column id="530" parent="492" name="positive_rate">
+      <DataType>REAL|0s</DataType>
+      <Position>11</Position>
+    </column>
+    <column id="531" parent="492" name="tests_per_case">
+      <DataType>REAL|0s</DataType>
+      <Position>12</Position>
+    </column>
+    <column id="532" parent="492" name="tests_units">
+      <DataType>TEXT|0s</DataType>
+      <Position>13</Position>
+    </column>
+    <column id="533" parent="492" name="total_vaccinations">
+      <DataType>REAL|0s</DataType>
+      <Position>14</Position>
+    </column>
+    <column id="534" parent="492" name="people_vaccinated">
+      <DataType>REAL|0s</DataType>
+      <Position>15</Position>
+    </column>
+    <column id="535" parent="492" name="people_fully_vaccinated">
+      <DataType>REAL|0s</DataType>
+      <Position>16</Position>
+    </column>
+    <column id="536" parent="492" name="total_boosters">
+      <DataType>REAL|0s</DataType>
+      <Position>17</Position>
+    </column>
+    <column id="537" parent="492" name="new_vaccinations">
+      <DataType>REAL|0s</DataType>
+      <Position>18</Position>
+    </column>
+    <column id="538" parent="492" name="new_vaccinations_smoothed">
+      <DataType>REAL|0s</DataType>
+      <Position>19</Position>
+    </column>
+    <column id="539" parent="492" name="total_vaccinations_per_hundred">
+      <DataType>REAL|0s</DataType>
+      <Position>20</Position>
+    </column>
+    <column id="540" parent="492" name="people_vaccinated_per_hundred">
+      <DataType>REAL|0s</DataType>
+      <Position>21</Position>
+    </column>
+    <column id="541" parent="492" name="people_fully_vaccinated_per_hundred">
+      <DataType>REAL|0s</DataType>
+      <Position>22</Position>
+    </column>
+    <column id="542" parent="492" name="total_boosters_per_hundred">
+      <DataType>REAL|0s</DataType>
+      <Position>23</Position>
+    </column>
+    <column id="543" parent="492" name="new_vaccinations_smoothed_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>24</Position>
+    </column>
+    <column id="544" parent="492" name="stringency_index">
+      <DataType>REAL|0s</DataType>
+      <Position>25</Position>
+    </column>
+    <column id="545" parent="492" name="population_density">
+      <DataType>REAL|0s</DataType>
+      <Position>26</Position>
+    </column>
+    <column id="546" parent="492" name="median_age">
+      <DataType>REAL|0s</DataType>
+      <Position>27</Position>
+    </column>
+    <column id="547" parent="492" name="aged_65_older">
+      <DataType>REAL|0s</DataType>
+      <Position>28</Position>
+    </column>
+    <column id="548" parent="492" name="aged_70_older">
+      <DataType>REAL|0s</DataType>
+      <Position>29</Position>
+    </column>
+    <column id="549" parent="492" name="gdp_per_capita">
+      <DataType>REAL|0s</DataType>
+      <Position>30</Position>
+    </column>
+    <column id="550" parent="492" name="extreme_poverty">
+      <DataType>REAL|0s</DataType>
+      <Position>31</Position>
+    </column>
+    <column id="551" parent="492" name="cardiovasc_death_rate">
+      <DataType>REAL|0s</DataType>
+      <Position>32</Position>
+    </column>
+    <column id="552" parent="492" name="diabetes_prevalence">
+      <DataType>REAL|0s</DataType>
+      <Position>33</Position>
+    </column>
+    <column id="553" parent="492" name="female_smokers">
+      <DataType>REAL|0s</DataType>
+      <Position>34</Position>
+    </column>
+    <column id="554" parent="492" name="male_smokers">
+      <DataType>REAL|0s</DataType>
+      <Position>35</Position>
+    </column>
+    <column id="555" parent="492" name="handwashing_facilities">
+      <DataType>REAL|0s</DataType>
+      <Position>36</Position>
+    </column>
+    <column id="556" parent="492" name="hospital_beds_per_thousand">
+      <DataType>REAL|0s</DataType>
+      <Position>37</Position>
+    </column>
+    <column id="557" parent="492" name="life_expectancy">
+      <DataType>REAL|0s</DataType>
+      <Position>38</Position>
+    </column>
+    <column id="558" parent="492" name="human_development_index">
+      <DataType>REAL|0s</DataType>
+      <Position>39</Position>
+    </column>
+    <column id="559" parent="492" name="excess_mortality_cumulative_absolute">
+      <DataType>REAL|0s</DataType>
+      <Position>40</Position>
+    </column>
+    <column id="560" parent="492" name="excess_mortality_cumulative">
+      <DataType>REAL|0s</DataType>
+      <Position>41</Position>
+    </column>
+    <column id="561" parent="492" name="excess_mortality">
+      <DataType>REAL|0s</DataType>
+      <Position>42</Position>
+    </column>
+    <column id="562" parent="492" name="excess_mortality_cumulative_per_million">
+      <DataType>REAL|0s</DataType>
+      <Position>43</Position>
+    </column>
+    <column id="563" parent="493" name="type">
       <DataType>text|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="493" parent="491" name="name">
+    <column id="564" parent="493" name="name">
       <DataType>text|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="494" parent="491" name="tbl_name">
+    <column id="565" parent="493" name="tbl_name">
       <DataType>text|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="495" parent="491" name="rootpage">
+    <column id="566" parent="493" name="rootpage">
       <DataType>int|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="496" parent="491" name="sql">
+    <column id="567" parent="493" name="sql">
       <DataType>text|0s</DataType>
       <Position>5</Position>
     </column>
