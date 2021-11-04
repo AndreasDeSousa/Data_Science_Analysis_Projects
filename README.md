@@ -1,6 +1,8 @@
-# Data_Science_Projects
+# Data Analysis and Science Projects
 A repository containing some of my personal data analysis/science project's 
 * Data Cleaning
-* Exploratory Data Analysis
 * Data Visualization
+* Exploratory Data Analysis
 * Machine Learning
+* SQL
+* Web Scraping
