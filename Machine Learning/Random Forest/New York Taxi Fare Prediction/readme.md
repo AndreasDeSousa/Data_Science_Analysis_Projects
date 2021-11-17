@@ -1,3 +1,7 @@
+# New York City Taxi Fare Prediction 
+
+### Regression, random tree, Gradient boosting
+
 ![NYTaxi](https://user-images.githubusercontent.com/33997173/142282535-a9869f5f-d8c3-4fef-ba99-bae535087ce5.jpg)
 
 
